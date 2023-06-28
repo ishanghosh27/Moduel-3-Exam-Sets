@@ -1,0 +1,20 @@
+uuid: e10e2d02-d6f8-4ee5-a830-6ae3e3d9f046
+langcode: en
+status: true
+dependencies: {  }
+id: set_1_global_css
+label: 'Set 1 Global CSS'
+code: |-
+  .menu--level-1{
+  	display: flex;
+  	justify-content: space-around;
+  }
+
+  .menu--level-1 li{
+  	list-style: none;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

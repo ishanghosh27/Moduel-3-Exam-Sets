@@ -1,0 +1,21 @@
+uuid: 751667ca-98ab-45b1-b869-4aefceec8d95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_current_location
+  module:
+    - geofield
+    - user
+id: user.user.field_current_location
+field_name: field_current_location
+entity_type: user
+bundle: user
+label: 'Current Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

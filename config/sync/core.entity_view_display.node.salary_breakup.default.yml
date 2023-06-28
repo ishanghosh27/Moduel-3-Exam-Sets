@@ -1,0 +1,87 @@
+uuid: 93df6297-f1f3-4328-8a94-5b9f6c207028
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_breakup.field_basic
+    - field.field.node.salary_breakup.field_employee_name
+    - field.field.node.salary_breakup.field_hra
+    - field.field.node.salary_breakup.field_salary_credit_date
+    - field.field.node.salary_breakup.field_salary_status_last_4_month
+    - field.field.node.salary_breakup.field_special_allowances
+    - node.type.salary_breakup
+  module:
+    - layout_builder
+    - options
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.salary_breakup.default
+targetEntityType: node
+bundle: salary_breakup
+mode: default
+content:
+  field_basic:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hra:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_salary_credit_date:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_salary_status_last_4_month:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_special_allowances:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

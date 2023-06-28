@@ -1,0 +1,14 @@
+uuid: 6dd0942e-eefe-4772-b36b-8217a27379d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cp
+  module:
+    - user
+id: user_add_role_action.cp
+label: 'Add the Content Admin 2 role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: cp

@@ -1,0 +1,17 @@
+uuid: 471482bc-8d8d-4d5c-9f6a-b52b617917bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Two Wheelers'
+type: two_wheelers
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

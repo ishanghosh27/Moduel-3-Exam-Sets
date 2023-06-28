@@ -1,0 +1,19 @@
+uuid: a59c8d06-cba7-43ea-b897-b3a5be7c8f71
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave
+  module:
+    - user
+id: node.leave.default
+targetEntityType: node
+bundle: leave
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

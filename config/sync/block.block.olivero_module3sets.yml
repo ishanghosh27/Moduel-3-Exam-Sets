@@ -1,0 +1,29 @@
+uuid: b08eabb7-2eb2-418b-b7f6-778649b4c29a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.module-3-sets
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_module3sets
+theme: olivero
+region: content
+weight: -12
+provider: null
+plugin: 'system_menu_block:module-3-sets'
+settings:
+  id: 'system_menu_block:module-3-sets'
+  label: 'Module 3 Sets'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

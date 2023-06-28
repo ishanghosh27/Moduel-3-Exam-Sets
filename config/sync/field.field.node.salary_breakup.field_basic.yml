@@ -1,0 +1,23 @@
+uuid: 06874326-dedd-4f49-a4d5-e2c8b7e2f331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic
+    - node.type.salary_breakup
+id: node.salary_breakup.field_basic
+field_name: field_basic
+entity_type: node
+bundle: salary_breakup
+label: Basic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: 'INR '
+  suffix: ''
+field_type: float

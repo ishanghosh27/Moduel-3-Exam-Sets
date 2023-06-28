@@ -1,0 +1,21 @@
+uuid: 6a167c8a-ea8b-4772-85bb-bcbc338fa62d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_status_last_4_month
+    - node.type.salary_breakup
+  module:
+    - options
+id: node.salary_breakup.field_salary_status_last_4_month
+field_name: field_salary_status_last_4_month
+entity_type: node
+bundle: salary_breakup
+label: 'Salary Status (Last 4 Months)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

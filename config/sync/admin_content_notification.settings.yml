@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: lqgpqHWPl_Pw9TRyZ9tqgNM1-ah9HMX3fwfU49_Ihck
+admin_content_notification_node_types:
+  appliances: appliances
+  electronics: electronics
+  fashion: fashion
+  grocery: grocery
+  home_furniture: home_furniture
+  mobiles: mobiles
+  two_wheelers: two_wheelers
+  article: null
+  leave: null
+  page: null
+  salary_breakup: null
+  webform: null
+admin_content_notification_trigger_on_node_update: true
+admin_content_notification_trigger_on_node_status: 0
+admin_content_notification_allowed_roles:
+  anonymous: anonymous
+  authenticated: authenticated
+  content_editor: content_editor
+  administrator: administrator
+  hr: hr
+admin_content_notification_email_limit: 50
+admin_content_notification_email: ''
+admin_content_notification_roles_notified:
+  authenticated: authenticated
+  content_editor: content_editor
+  administrator: administrator
+  hr: hr
+admin_content_notification_email_subject: 'New Content @action'
+admin_content_notification_email_body: 'A new content [node:title] belonging to Content Type - [content-type:name] has been @action on your site <br/> Submitted by : @user_who_posted <br/> New content link : @content_link || Content has been created by [node:author]'
+admin_content_notification_default_to: practice@main.drupal.com

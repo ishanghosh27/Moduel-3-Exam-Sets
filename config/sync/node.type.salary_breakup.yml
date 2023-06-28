@@ -1,0 +1,17 @@
+uuid: 0e1d02a1-a68b-4fce-9b03-e0c1aa9c2528
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Salary Breakup'
+type: salary_breakup
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

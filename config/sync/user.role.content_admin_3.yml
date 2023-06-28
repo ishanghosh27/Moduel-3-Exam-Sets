@@ -1,0 +1,14 @@
+uuid: d21f80c3-9c1a-40eb-afae-501ca9f1f610
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.two_wheelers
+  module:
+    - node
+id: content_admin_3
+label: 'Content Admin 3'
+weight: 7
+is_admin: null
+permissions:
+  - 'create two_wheelers content'

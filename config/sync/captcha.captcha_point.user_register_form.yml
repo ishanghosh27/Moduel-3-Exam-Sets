@@ -1,0 +1,9 @@
+uuid: edada1c1-03c9-4d1a-be34-273b5e0461ef
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: 2iz3cMg7T1eSKXtNIB9WyaRptfg7wosDDPBSBhXFXl0
+formId: user_register_form
+captchaType: default
+label: user_register_form

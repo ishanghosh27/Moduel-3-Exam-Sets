@@ -1,0 +1,17 @@
+uuid: bac34704-6dff-420d-8e96-f9a6b654e835
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Leave
+type: leave
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

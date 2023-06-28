@@ -1,0 +1,26 @@
+uuid: 7fbf97c0-f4af-4722-a907-e71b109d3632
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: grocery_subqueue
+label: 'Grocery Subqueue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      grocery: grocery
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

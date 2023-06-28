@@ -1,0 +1,18 @@
+uuid: d97ab6a8-be45-430a-8d96-6b8fc149c7de
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave
+id: node.leave.title
+field_name: title
+entity_type: node
+bundle: leave
+label: 'Employee Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
