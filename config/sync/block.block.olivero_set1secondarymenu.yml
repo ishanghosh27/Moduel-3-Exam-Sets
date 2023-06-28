@@ -1,0 +1,29 @@
+uuid: 74f4c6b2-29e7-4998-b26b-315f9e8c87fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.set-1-secondary-menu
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_set1secondarymenu
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'system_menu_block:set-1-secondary-menu'
+settings:
+  id: 'system_menu_block:set-1-secondary-menu'
+  label: 'Set 1 Secondary Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/set-1-homepage\r\n/become-a-seller\r\n/grocery\r\n/mobiles\r\n/fashion\r\n/electronics\r\n/home-furniture\r\n/appliances\r\n/two-wheelers\r\n/grocery/*\r\n/mobiles/*\r\n/fashion/*\r\n/electronics/*\r\n/home-furniture/*\r\n/appliances/*\r\n/two-wheelers/*"

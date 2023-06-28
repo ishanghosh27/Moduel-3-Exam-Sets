@@ -1,0 +1,29 @@
+uuid: b62118e3-45eb-4372-a5ec-75e62f6ca9a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.set-1-top-header
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_set1topheader
+theme: olivero
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:set-1-top-header'
+settings:
+  id: 'system_menu_block:set-1-top-header'
+  label: 'Set 1 Top Header'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/set-1-homepage\r\n/become-a-seller\r\n/grocery\r\n/mobiles\r\n/fashion\r\n/electronics\r\n/home-furniture\r\n/appliances\r\n/two-wheelers\r\n/grocery/*\r\n/mobiles/*\r\n/fashion/*\r\n/electronics/*\r\n/home-furniture/*\r\n/appliances/*\r\n/two-wheelers/*"

@@ -1,0 +1,32 @@
+uuid: ec5e1897-afe0-4be1-9e02-a94cd899e399
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_breakup.field_basic
+    - field.field.node.salary_breakup.field_employee_name
+    - field.field.node.salary_breakup.field_hra
+    - field.field.node.salary_breakup.field_salary_credit_date
+    - field.field.node.salary_breakup.field_salary_status_last_4_month
+    - field.field.node.salary_breakup.field_special_allowances
+    - node.type.salary_breakup
+  module:
+    - user
+id: node.salary_breakup.teaser
+targetEntityType: node
+bundle: salary_breakup
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_basic: true
+  field_employee_name: true
+  field_hra: true
+  field_salary_credit_date: true
+  field_salary_status_last_4_month: true
+  field_special_allowances: true

@@ -1,0 +1,23 @@
+uuid: 363a5b0f-5063-4ea8-9050-a646c861e55f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hra
+    - node.type.salary_breakup
+id: node.salary_breakup.field_hra
+field_name: field_hra
+entity_type: node
+bundle: salary_breakup
+label: HRA
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: 'INR '
+  suffix: ''
+field_type: float

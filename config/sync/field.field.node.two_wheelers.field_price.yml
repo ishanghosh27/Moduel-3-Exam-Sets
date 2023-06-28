@@ -1,0 +1,23 @@
+uuid: 87583249-dac1-4fb2-8105-d3a53a401ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.two_wheelers
+id: node.two_wheelers.field_price
+field_name: field_price
+entity_type: node
+bundle: two_wheelers
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: 'INR '
+  suffix: ''
+field_type: float

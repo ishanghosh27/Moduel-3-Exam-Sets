@@ -1,0 +1,22 @@
+uuid: f0d25b8b-f4c0-414b-9ebc-5f4cfb5a59ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_furniture
+id: node.home_furniture.promote
+field_name: promote
+entity_type: node
+bundle: home_furniture
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

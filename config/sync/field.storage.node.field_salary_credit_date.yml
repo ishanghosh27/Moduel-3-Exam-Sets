@@ -1,0 +1,33 @@
+uuid: 8548a02a-d60b-43f4-8e9b-85960743b1ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_salary_credit_date
+field_name: field_salary_credit_date
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: firstweek
+      label: 'Between 1st and 7th Of Every Month'
+    -
+      value: secondweek
+      label: 'Between 8th and 15th Of Every Month'
+    -
+      value: thirdweek
+      label: 'Between 16th and 23rd Of Every Month'
+    -
+      value: fourthweek
+      label: 'Between 24th and 31st Of Every Month'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

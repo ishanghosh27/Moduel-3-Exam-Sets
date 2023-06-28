@@ -1,0 +1,29 @@
+uuid: 333a604f-3f71-4395-b894-8a7678dde6b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.set_1_homepage_middle_block
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__set_1_homepage_middle_block_block_4
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:set_1_homepage_middle_block-block_4'
+settings:
+  id: 'views_block:set_1_homepage_middle_block-block_4'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /set-1-homepage

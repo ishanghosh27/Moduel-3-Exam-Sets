@@ -1,0 +1,26 @@
+uuid: dab70acc-4b15-4986-836c-8c8aa5b14595
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: two_wheelers_subqueue
+label: 'Two Wheelers Subqueue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      two_wheelers: two_wheelers
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

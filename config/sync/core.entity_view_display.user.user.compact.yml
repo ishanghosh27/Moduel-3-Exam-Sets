@@ -1,0 +1,48 @@
+uuid: 478dd8d5-dfe9-4698-8d3d-41bd4baf042d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_current_location
+    - field.field.user.user.field_date_of_birth
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_social_media_links
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  role_expire:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1000
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_current_location: true
+  field_date_of_birth: true
+  field_designation: true
+  field_full_name: true
+  field_phone_number: true
+  field_social_media_links: true
+  member_for: true
