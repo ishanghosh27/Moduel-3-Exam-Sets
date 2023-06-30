@@ -1,0 +1,27 @@
+uuid: 1c06ea16-a99c-4d9d-abfc-3726884926b8
+langcode: en
+status: true
+dependencies: {  }
+id: set_2_global_css
+label: 'Set 2 Global CSS'
+code: |-
+  .menu__link--has-children ~ .menu--level-2{
+  	display: none;
+  }
+
+  .menu__link--has-children:hover ~ .menu--level-2{
+  	display: block;
+  }
+
+  .menu__link--has-children:focus ~ .menu--level-2{
+  	display: block;
+  }
+
+  .menu__link--has-children:active ~ .menu--level-2{
+  	display: block;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

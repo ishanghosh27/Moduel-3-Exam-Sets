@@ -1,20 +1,19 @@
-uuid: c23d2dfb-cb3a-4d6f-b994-bddaf1525b35
+uuid: 0585b622-e086-4b81-9eff-24f0971a3fe8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_single_image_banner
-    - node.type.page
+    - field.field.node.products.body
+    - field.field.node.products.field_product_image
+    - field.field.node.products.field_products_type
+    - node.type.products
   module:
     - image
     - text
     - user
-_core:
-  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
-id: node.page.default
+id: node.products.default
 targetEntityType: node
-bundle: page
+bundle: products
 mode: default
 content:
   body:
@@ -22,9 +21,9 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
-  field_single_image_banner:
+  field_product_image:
     type: image
     label: hidden
     settings:
@@ -33,11 +32,19 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
+    region: content
+  field_products_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden: {  }

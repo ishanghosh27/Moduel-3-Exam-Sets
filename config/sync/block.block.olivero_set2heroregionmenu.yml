@@ -1,0 +1,29 @@
+uuid: 2a70adde-714c-475a-95ed-7d23ac0c7cca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.set-2-hero-region-menu
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_set2heroregionmenu
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'system_menu_block:set-2-hero-region-menu'
+settings:
+  id: 'system_menu_block:set-2-hero-region-menu'
+  label: 'Set 2 Hero Region Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/set-2-homepage\r\n/products\r\n/products/*\r\n/newsroom\r\n/newsroom/*"

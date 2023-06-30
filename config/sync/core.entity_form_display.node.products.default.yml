@@ -1,26 +1,25 @@
-uuid: 67cc59b8-c435-4d3a-b2ee-84f78081121b
+uuid: 18c606a9-57e7-486f-bf0a-c5ac5045b8c0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_single_image_banner
+    - field.field.node.products.body
+    - field.field.node.products.field_product_image
+    - field.field.node.products.field_products_type
     - image.style.thumbnail
-    - node.type.page
+    - node.type.products
   module:
     - image
     - path
     - text
-_core:
-  default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
-id: node.page.default
+id: node.products.default
 targetEntityType: node
-bundle: page
+bundle: products
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -34,13 +33,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_single_image_banner:
+  field_product_image:
     type: image_image
-    weight: 121
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_products_type:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

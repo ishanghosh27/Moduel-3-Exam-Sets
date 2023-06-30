@@ -1,0 +1,21 @@
+uuid: 15e13105-f85e-471a-ad66-c9d049a9c50a
+langcode: en
+status: true
+dependencies:
+  module:
+    - iek
+name: recent_news_block_50_x_50_
+label: 'Recent News Block (50 x 50)'
+effects:
+  048e53ae-40ca-4d8c-97d8-51a7d78225a0:
+    uuid: 048e53ae-40ca-4d8c-97d8-51a7d78225a0
+    id: iek_image_resize
+    weight: 1
+    data:
+      width: '50'
+      height: '50'
+      blank_margin: '0'
+      blank_margin_bg_color: '#FFFFFF'
+      position: middle_center
+      x: '0'
+      'y': '0'

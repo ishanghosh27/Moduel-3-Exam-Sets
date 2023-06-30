@@ -1,26 +1,25 @@
-uuid: 67cc59b8-c435-4d3a-b2ee-84f78081121b
+uuid: bbd7c2b0-2141-4be4-8412-2523bf26ca3f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_single_image_banner
+    - field.field.node.news.body
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_products_type
     - image.style.thumbnail
-    - node.type.page
+    - node.type.news
   module:
     - image
     - path
     - text
-_core:
-  default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
-id: node.page.default
+id: node.news.default
 targetEntityType: node
-bundle: page
+bundle: news
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -34,13 +33,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_single_image_banner:
+  field_news_image:
     type: image_image
-    weight: 121
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_products_type:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

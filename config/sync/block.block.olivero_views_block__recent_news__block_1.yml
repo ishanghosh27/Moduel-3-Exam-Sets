@@ -1,0 +1,30 @@
+uuid: de205219-67f6-4fac-8353-0057ef419795
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_news_
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__recent_news__block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:recent_news_-block_1'
+settings:
+  id: 'views_block:recent_news_-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/newsroom/*'
