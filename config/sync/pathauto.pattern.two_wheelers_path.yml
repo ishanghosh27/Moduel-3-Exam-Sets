@@ -1,0 +1,22 @@
+uuid: d00d80c5-810f-48a1-944e-1cfa4f0c4d05
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: two_wheelers_path
+label: 'Two Wheelers Path'
+type: 'canonical_entities:node'
+pattern: '/two-wheelers/[node:title]'
+selection_criteria:
+  dff1effd-57c0-4c0b-92f8-0ec2a58ba44f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: dff1effd-57c0-4c0b-92f8-0ec2a58ba44f
+    context_mapping:
+      node: node
+    bundles:
+      two_wheelers: two_wheelers
+selection_logic: and
+weight: -5
+relationships: {  }

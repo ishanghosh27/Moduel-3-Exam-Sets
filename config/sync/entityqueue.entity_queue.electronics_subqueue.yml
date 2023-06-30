@@ -1,0 +1,26 @@
+uuid: fa24e74e-9cc1-4267-89d7-eb0d126541e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: electronics_subqueue
+label: 'Electronics Subqueue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      electronics: electronics
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

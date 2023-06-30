@@ -1,0 +1,18 @@
+uuid: 55ef6d88-910e-47dd-93ef-40b526e93f44
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/local
+module:
+  devel: 0
+  views_ui: 0
+theme: {  }
+complete_list:
+  - system.site
+partial_list: {  }

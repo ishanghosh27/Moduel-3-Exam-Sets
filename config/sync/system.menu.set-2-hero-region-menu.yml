@@ -1,0 +1,8 @@
+uuid: 8b7f47af-2a06-4d5a-8fc3-e3b84ab2ff5a
+langcode: en
+status: true
+dependencies: {  }
+id: set-2-hero-region-menu
+label: 'Set 2 Hero Region Menu'
+description: ''
+locked: false

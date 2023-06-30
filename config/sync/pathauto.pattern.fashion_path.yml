@@ -1,0 +1,22 @@
+uuid: a35584be-9f10-45a7-a7b1-a63a872a7e94
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: fashion_path
+label: 'Fashion Path'
+type: 'canonical_entities:node'
+pattern: '/fashion/[node:title]'
+selection_criteria:
+  032f735e-3a1b-4df0-8f00-cd15a3f5db68:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 032f735e-3a1b-4df0-8f00-cd15a3f5db68
+    context_mapping:
+      node: node
+    bundles:
+      fashion: fashion
+selection_logic: and
+weight: -5
+relationships: {  }

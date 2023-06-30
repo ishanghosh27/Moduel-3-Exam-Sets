@@ -1,0 +1,24 @@
+uuid: ba99a8b4-79fe-4d6b-9485-943fd878b6a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.grocery
+  module:
+    - text
+id: node.grocery.body
+field_name: body
+entity_type: node
+bundle: grocery
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,36 @@
+uuid: 99d7c5b0-6918-4719-bbbf-539947a110e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_designation
+field_name: field_designation
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: it
+      label: IT
+    -
+      value: sd
+      label: SD
+    -
+      value: sd1
+      label: SD1
+    -
+      value: analyst
+      label: Analyst
+    -
+      value: hr
+      label: HR
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

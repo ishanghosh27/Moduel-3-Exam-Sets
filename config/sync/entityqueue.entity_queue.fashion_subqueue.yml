@@ -1,0 +1,26 @@
+uuid: 49d7376c-2fc0-478c-8f1b-90592511ae6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: fashion_subqueue
+label: 'Fashion Subqueue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fashion: fashion
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

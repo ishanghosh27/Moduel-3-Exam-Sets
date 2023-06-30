@@ -1,0 +1,17 @@
+uuid: 8a7b501c-0e05-4050-8a1b-9bb0c66ec70a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Electronics
+type: electronics
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

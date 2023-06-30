@@ -1,0 +1,38 @@
+uuid: e2687350-35cc-495e-940a-da9113b33efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.module-3-sets.field_module_3_sets
+    - system.menu.module-3-sets
+  module:
+    - link
+    - media_library
+    - menu_item_extras
+id: menu_link_content.module-3-sets.default
+targetEntityType: menu_link_content
+bundle: module-3-sets
+mode: default
+content:
+  field_module_3_sets:
+    type: media_library_widget
+    weight: 21
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 250c0485-b8ef-463d-aed7-a00dc4389a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.about_us_page_our_partners_section
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__about_us_page_our_partners_section_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:about_us_page_our_partners_section-block_1'
+settings:
+  id: 'views_block:about_us_page_our_partners_section-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /about-us

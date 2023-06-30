@@ -1,0 +1,22 @@
+uuid: 4faae307-e910-4d56-b4ba-10ee56b49dfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: appl
+label: 'Appliances Path'
+type: 'canonical_entities:node'
+pattern: '/appliances/[node:title]'
+selection_criteria:
+  be16bb15-28aa-44de-9ab1-b06932480da7:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: be16bb15-28aa-44de-9ab1-b06932480da7
+    context_mapping:
+      node: node
+    bundles:
+      appliances: appliances
+selection_logic: and
+weight: -5
+relationships: {  }

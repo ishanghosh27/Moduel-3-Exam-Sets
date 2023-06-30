@@ -1,0 +1,29 @@
+uuid: da2d2bd6-3123-48ff-9b4b-fc8c704b596a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.set_2_homepage_latest_news_block
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__set_2_homepage_latest_news_block_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:set_2_homepage_latest_news_block-block_1'
+settings:
+  id: 'views_block:set_2_homepage_latest_news_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /set-2-homepage

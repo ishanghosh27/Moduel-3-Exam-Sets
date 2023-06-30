@@ -1,0 +1,21 @@
+uuid: a27135da-bfbf-427c-8699-1f54469ed2dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_credit_date
+    - node.type.salary_breakup
+  module:
+    - options
+id: node.salary_breakup.field_salary_credit_date
+field_name: field_salary_credit_date
+entity_type: node
+bundle: salary_breakup
+label: 'Salary Credit Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

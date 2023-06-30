@@ -1,0 +1,18 @@
+uuid: a7101670-ddcc-4519-bcda-3e139d3a82a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary_breakup
+id: node.salary_breakup.title
+field_name: title
+entity_type: node
+bundle: salary_breakup
+label: 'Employee Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

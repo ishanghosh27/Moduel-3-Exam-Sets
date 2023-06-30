@@ -1,0 +1,34 @@
+uuid: 1b064819-3d12-4903-b446-7cc77783fe3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.electronics.body
+    - field.field.node.electronics.field_image_set_1
+    - field.field.node.electronics.field_price
+    - node.type.electronics
+  module:
+    - text
+    - user
+id: node.electronics.teaser
+targetEntityType: node
+bundle: electronics
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_set_1: true
+  field_price: true

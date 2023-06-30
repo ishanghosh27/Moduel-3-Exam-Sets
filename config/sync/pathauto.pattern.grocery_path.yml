@@ -1,0 +1,22 @@
+uuid: c8a92cf8-a7ef-40af-a987-2e9140a22a60
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: grocery_path
+label: 'Grocery Path'
+type: 'canonical_entities:node'
+pattern: '/grocery/[node:title]'
+selection_criteria:
+  bd86f327-3713-4f1d-bd65-d484ea2f3cd3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bd86f327-3713-4f1d-bd65-d484ea2f3cd3
+    context_mapping:
+      node: node
+    bundles:
+      grocery: grocery
+selection_logic: and
+weight: -5
+relationships: {  }
